@@ -5,7 +5,10 @@ const logger = require('../util/logger')
 // list of all the commands
 
 const commands = {
-    '.inactive': require('./inactive')
+    '.inactive': require('./inactive'),
+    '.last': require('./last'),
+    '.lastplayed': require('./last'),
+    '.lastplay': require('./last')
 }
 
 async function messageHandler(msg) {

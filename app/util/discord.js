@@ -12,6 +12,12 @@ async function getMembers() {
     return guild.members.array()
 }
 
+function getMember(user_id) {
+
+    if(!guild) return
+    return guild.fetchMember(user_id)
+}
+
 function login(token) {
 
     const p = new Promise((resolve, reject) => {
@@ -42,5 +48,6 @@ function login(token) {
 module.exports = {
     client,
     login,
-    getMembers
+    getMembers,
+    getMember
 }
