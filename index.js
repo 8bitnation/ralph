@@ -1,2 +1,2 @@
 'use strict'
-const app = require('./app')
+require('./app')

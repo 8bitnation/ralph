@@ -7,7 +7,7 @@ const chunk = require('../util/chunk')
 
 module.exports = async function(msg) {
 
-    logger.debug('inactive: %s', msg.content)
+    logger.debug('lastplayed: %s', msg.content)
 
     // check each clan
     const clans = process.env.CLANS.split(',')

@@ -8,7 +8,8 @@ const commands = {
     '.inactive': require('./inactive'),
     '.last': require('./last'),
     '.lastplayed': require('./last'),
-    '.lastplay': require('./last')
+    '.lastplay': require('./last'),
+    '.missing': require('./missing')
 }
 
 async function messageHandler(msg) {
