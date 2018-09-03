@@ -1,0 +1,19 @@
+module.exports = {
+    /**
+     * Application configuration section
+     * http://pm2.keymetrics.io/docs/usage/application-declaration/
+     */
+    apps : [{
+        name      : 'ralph',
+        script    : 'index.js',
+        env: {
+          DISCORD_TOKEN: '',
+          BUNGIE_TOKEN: '',
+          CLANS: '',
+          LOG_LEVEL: 'info'
+        },
+        env_production : {
+          NODE_ENV: 'production'
+        }
+    }]
+  }

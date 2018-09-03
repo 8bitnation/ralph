@@ -1,4 +1,4 @@
-# teambot
+# ralph
 
 8bit Nation bespoke mod helper bot
 
